@@ -1,6 +1,9 @@
 import React from "react";
+import { useState } from "react";
 
 const Counter = () => {
+  useState();
+
   return (
     <div className="col-12 col-md-2 offset-md-4 border text-white">
       <span className="h2 pt-4 m-2 text-white-50">Fun Counter</span>
