@@ -2,7 +2,9 @@ import React from "react";
 import { useState } from "react";
 
 const Counter = () => {
-  useState();
+  // all the use states should be extracted to the top of the function
+  // cannot be used inside a loop, condition or nested function
+  const [counter, setCounter] = useState(10);
 
   return (
     <div className="col-12 col-md-2 offset-md-4 border text-white">
@@ -12,7 +14,7 @@ const Counter = () => {
       <br />
       <span className="h4">
         Counter: &nbsp;
-        <span className="text-success">0</span>
+        <span className="text-success">{counter}</span>
       </span>
     </div>
   );
